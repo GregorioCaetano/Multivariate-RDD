@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+
+\begin{table}[tbp] \centering
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+{\normalsize
+\begin{tabularx}{\textwidth}{C|C|CCC|CCC}
+
+\toprule
+\midrule First&All&&Whites&&&Minorities& \tabularnewline \addlinespace[.05in]
+Stage&&Dropout&HS Grad&HS Grad+&Dropout&HS Grad&HS Grad+ \tabularnewline \addlinespace[.05in]
+\midrule \midrule 1+&0.093&0.136&0.069&0.048&0.209&0.100&0.075 \tabularnewline \addlinespace[.05in]
+Policy&(0.004)&(0.014)&(0.005)&(0.004)&(0.016)&(0.019)&(0.014) \tabularnewline \addlinespace[.05in]
+\midrule 2+&0.482&0.460&0.584&0.589&0.227&0.322&0.376 \tabularnewline \addlinespace[.05in]
+Policies&(0.018)&(0.022)&(0.025)&(0.025)&(0.016)&(0.034)&(0.025) \tabularnewline \addlinespace[.05in]
+\midrule \midrule Reduced&All&&Whites&&&Minorities& \tabularnewline \addlinespace[.05in]
+Form&&Dropout&HS Grad&HS Grad+&Dropout&HS Grad&HS Grad+ \tabularnewline \addlinespace[.05in]
+\midrule \midrule Delayed&-0.018&-0.008&-0.014&-0.012&-0.053&-0.027&-0.001 \tabularnewline \addlinespace[.05in]
+Care&(0.004)&(0.012)&(0.007)&(0.006)&(0.010)&(0.012)&(0.014) \tabularnewline \addlinespace[.05in]
+\midrule Rationed&-0.016&-0.004&-0.019&-0.012&-0.038&-0.022&0.004 \tabularnewline \addlinespace[.05in]
+Care&(0.003)&(0.012)&(0.006)&(0.004)&(0.010)&(0.012)&(0.011) \tabularnewline \addlinespace[.05in]
+\midrule Went to&0.010&0.006&0.020&0.015&-0.016&0.000&0.019 \tabularnewline \addlinespace[.05in]
+Hospital&(0.005)&(0.016)&(0.010)&(0.008)&(0.016)&(0.016)&(0.018) \tabularnewline \addlinespace[.05in]
+\bottomrule \addlinespace[1.5ex]
+
+\end{tabularx}
+}
+\end{table}
+\end{document}

@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+
+\begin{table}[tbp] \centering
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+{\normalsize
+\begin{tabularx}{\textwidth}{C|CC|CC|CC}
+
+\toprule
+ & \multicolumn{2}{c}{(I)} & \multicolumn{2}{c}{(II)} & \multicolumn{2}{c}{(III)} \\ & \multicolumn{2}{c}{$ W=$ Race} & \multicolumn{2}{c}{$ W=$ Race \& Educ} & \multicolumn{2}{c}{$ W=$ Race, Educ \& Other} \\ Outcome & $\hat{\beta}_{1}$ & $\hat{\beta}_{2}$ & $\hat{\beta}_{1}$ & $\hat{\beta}_{2}$ & $\hat{\beta}_{1}$ & $\hat{\beta}_{2}$ \tabularnewline
+\midrule\addlinespace[1.5ex]
+&-0.234**&0.008&-0.210**&0.004&-0.203**&0.001 \tabularnewline \addlinespace[.05in]
+Delayed Care&(0.060)   &(0.013)   &(0.050)   &(0.010)   &(0.043)   &(0.009)    \tabularnewline \addlinespace[.05in]
+&&&\multicolumn{2}{c}{[J-test p-value = 0.360]}&&\multicolumn{2}{c}{[J-test p-value = 0.347]}& \tabularnewline \addlinespace[.05in]
+\midrule &-0.145**&-0.005&-0.132**&-0.007&-0.135**&-0.007 \tabularnewline \addlinespace[.05in]
+Rationed Care&(0.053)   &(0.009)   &(0.043)   &(0.007)   &(0.038)   &(0.007)    \tabularnewline \addlinespace[.05in]
+&&&\multicolumn{2}{c}{[J-test p-value = 0.458]}&&\multicolumn{2}{c}{[J-test p-value = 0.133]}& \tabularnewline \addlinespace[.05in]
+\midrule &-0.087&0.038**&-0.109&0.041**&-0.084&0.035** \tabularnewline \addlinespace[.05in]
+Went to Hospital&(0.086)   &(0.018)   &(0.081)   &(0.017)   &(0.074)   &(0.016)    \tabularnewline \addlinespace[.05in]
+&&&\multicolumn{2}{c}{[J-test p-value = 0.925]}&&\multicolumn{2}{c}{[J-test p-value = 0.516]}& \tabularnewline \addlinespace[.05in]
+\bottomrule \addlinespace[1.5ex]
+
+\end{tabularx}
+}
+\end{table}
+\end{document}

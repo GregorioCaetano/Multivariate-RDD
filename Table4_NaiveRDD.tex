@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+
+\begin{table}[tbp] \centering
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+{\normalsize
+\begin{tabularx}{\textwidth}{C|CC|CC}
+
+\toprule
+  & Strategy \(A_1\) & Strategy \(B_1\) & Strategy \(A_2\) & Strategy \(B_2\) \\ Outcome & \( X_1 \) & \( X_1 \) & \( X_2 \) & \( X_2 \) \tabularnewline
+\midrule\addlinespace[1.5ex]
+\midrule \midrule Delayed&-0.192&-0.001&-0.038&0.006 \tabularnewline \addlinespace[.05in]
+Care&(0.035)&(0.063)&(0.007)&(0.007) \tabularnewline \addlinespace[.05in]
+\midrule Rationed&-0.173&-0.023&-0.034&0.001 \tabularnewline \addlinespace[.05in]
+Care&(0.031)&(0.043)&(0.006)&(0.006) \tabularnewline \addlinespace[.05in]
+\midrule Went to&0.109&0.059&0.021&0.010 \tabularnewline \addlinespace[.05in]
+Hospital&(0.054)&(0.085)&(0.011)&(0.011) \tabularnewline \addlinespace[.05in]
+\bottomrule \addlinespace[1.5ex]
+
+\end{tabularx}
+}
+\end{table}
+\end{document}
